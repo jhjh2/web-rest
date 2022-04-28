@@ -20,7 +20,7 @@ public class UserServiceImplTest {
 
     @BeforeEach // 단위 테스트가 수행될 때마다 호출된다
     public void startUp() {
-        this.kim =
+        this.kim = new User("kim","kim@mail.com");
         this.lee = new User("lee","lee@mail.com");
         this.userService.register(kim);
         this.userService.register(lee);
